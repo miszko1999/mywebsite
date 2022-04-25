@@ -4,7 +4,7 @@
 </head>
 <body bgcolor=white>
 <center>
-<font size=5 color=#00004d face=Tahoma> 
+<font size=5 color=#00004d face=Serif> 
 <br />
 <br />
 <br />
@@ -13,7 +13,7 @@
 <br />
 Michał Śliwiński
 <br />
-<font size=4 color=#00004d face=Tahoma> 
+<font size=4 color=#00004d face=Serif> 
 <br />
 <a href=mailto:miszko1999@gmail.com>Email</a>
 <br />
@@ -29,11 +29,28 @@ Michał Śliwiński
 <br />
 <br />
 
-<a href="notes.html"> Notes</a>
-<br />
-<br />
+<center>
+<form>
+  	<!--  <label for="pswd">Password: </label> -->
+    <input type="password" id="pswd">
+    <input type="button" value="Submit" onclick="checkPswd();" />
+</form>
+<script type="text/javascript">
+    function checkPswd() {
+        var confirmPassword = "azorek1999";
+        var password = document.getElementById("pswd").value;
+        if (password == confirmPassword) {
+             window.location="notes.html";
+        }
+        else{
+            alert("Passwords do not match.");
+        }
+    }
+</script>
+</center>
+
 <br /><br /><br />
-<font size=0.5 color=#00004d face=Tahoma> 
+<font size=0.5 color=#00004d face=Serif> 
 <p style="position:relative; right:-25%">
 <a> Text test lower right
 </font>
