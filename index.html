@@ -4,7 +4,7 @@
 </head>
 <body bgcolor=white>
 <center>
-<font size=5 color=#00004d face=Serif> 
+<font size=5 color=#00004d face=Georgia> 
 <br />
 <br />
 <br />
@@ -13,9 +13,9 @@
 <br />
 Michał Śliwiński
 <br />
-<font size=4 color=#00004d face=Serif> 
+<font size=4 color=#00004d face=Courier> 
 <br />
-<a href=mailto:miszko1999@gmail.com>Email</a>
+<a href=mailto:michal.andrzej.sliwinski@gmail.com>Email</a>
 <br />
 <a href=https://www.facebook.com/miszko1999>Facebook</a>
 <br />
@@ -33,17 +33,17 @@ Michał Śliwiński
 <form>
   	<!--  <label for="pswd">Password: </label> -->
     <input type="password" id="pswd">
-    <input type="button" value="Submit" onclick="checkPswd();" />
+    <input type="button" value="Go" onclick="checkPswd();" />
 </form>
 <script type="text/javascript">
     function checkPswd() {
-        var confirmPassword = "azorek1999";
+        var confirmPassword = "szprycer";
         var password = document.getElementById("pswd").value;
         if (password == confirmPassword) {
              window.location="notes.html";
         }
         else{
-            alert("Passwords do not match.");
+            alert("Wrong Password");
         }
     }
 </script>
